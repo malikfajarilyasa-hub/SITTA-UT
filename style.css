@@ -1,0 +1,449 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #003366, #0066cc);
+  color: #040404;
+  min-height: 100vh;
+}
+
+/* ================= LOGIN ================= */
+.login-container {
+  width: 420px;
+  margin: 60px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.logo-ut {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.welcome-text {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+#login-form {
+  width: 100%;
+}
+
+#login-form label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: #003366;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #0066cc;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+#login-button,
+.primary-button,
+.succes-button {
+  width: 100%;
+  padding: 14px;
+  background: #f6be06f1;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#login-button:hover,
+.primary-button:hover,
+.succes-button:hover {
+  background: #004999;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: #003366;
+  color: white;
+  padding: 18px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a,
+.dropbtn,
+.logout-button {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-menu a:hover,
+.dropbtn:hover,
+.logout-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.active {
+  background: #0066cc;
+  box-shadow: 0 4px 10px rgba(0, 102, 204, 0.4);
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px;
+}
+
+/* ================= CARD ================= */
+.card-link,
+.report-section,
+.timeline-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-5px);
+  background: #f3f9ff;
+  color: #0066cc;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+th {
+  background: #003366;
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+td img {
+  width: 70px;
+  border-radius: 8px;
+}
+
+/* ================= MODAL ================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  width: 400px;
+  margin: 100px auto;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.close-btn {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ================= DASHBOARD ================= */
+.greeting {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.greeting h2 {
+  color: #003366;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.greeting p {
+  font-size: 18px;
+  color: #555;
+}
+
+#user-info {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.quick-links h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: white;
+  min-width: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #003366;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background: #f0f7ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ================= REPORT ================= */
+.report-section h3 {
+  color: #003366;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.report-section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ================= STOCK ================= */
+.stock-form label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* ================= TRACKING PAGE ================= */
+.tracking-input {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin-top: 25px;
+}
+
+#tracking-form {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#tracking-form label {
+  width: 100%;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+#tracking-form input {
+  flex: 1;
+  min-width: 250px;
+  padding: 14px 18px;
+  border: 2px solid #d9e6f2;
+  border-radius: 12px;
+  background: #f8fbff;
+  margin: 0;
+}
+
+#tracking-form button {
+  padding: 14px 28px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0066cc, #004999);
+  color: white;
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.tracking-result {
+  margin-top: 25px;
+  display: grid;
+  gap: 25px;
+}
+
+.summary-box,
+.timeline-box {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.summary-box h3 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.summary-box p {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.summary-box h4,
+.timeline-box h4 {
+  color: #003366;
+  margin: 20px 0 15px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.status-badge {
+  display: inline-block;
+  background: orange;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ================= TIMELINE ================= */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  background: #f8fbff;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #0066cc;
+  border-radius: 12px;
+  line-height: 1.5;
+}
+
+.timeline li strong {
+  display: block;
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+/* ================= UTILITIES ================= */
+.hidden {
+  display: none;
+}
+
+.hidden-form {
+  display: none;
+  margin-top: 20px;
+}

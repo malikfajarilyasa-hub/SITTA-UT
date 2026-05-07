@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - SITTA UT</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Dashboard APLIKASI SITTA</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="dashboard.html" class="active">🏠Beranda</a></li>
+          <li><a href="stock.html">📚Informasi Bahan Ajar SITTA</a></li>
+          <li><a href="tracking.html">🚚Tracking Pengiriman SITTA</a></li>
+          <li class="dropdown">
+            <button class="dropbtn">📊Laporan</button>
+            <div class="dropdown-content">
+              <a href="#monitoring">Monitoring Progress DO Bahan Ajar</a>
+              <a href="#rekap">Rekap Bahan Ajar</a>
+              <a href="#histori">Histori Transaksi Bahan Ajar</a>
+            </div>
+          </li>
+          <li><button id="logout-btn" class="logout-button">Keluar</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="greeting">
+        <h2 id="greeting-message">Selamat Datang di Dashboard SITTA</h2>
+        <p>
+          Anda login sebagai
+          <span id="user-info">Pengguna-SITTA</span>
+        </p>
+        <p>
+          Sistem Informasi Pemesanan dan Tracking Bahan Ajar Universitas Terbuka
+        </p>
+      </section>
+
+      <section class="quick-links">
+        <h3>Menu Cepat</h3>
+        <div class="link-grid">
+          <a href="stock.html" class="card-link">Informasi Bahan Ajar SITTA</a>
+          <a href="tracking.html" class="card-link">Tracking Pengiriman</a>
+          <a href="#monitoring" class="card-link">Monitoring DO</a>
+        </div>
+      </section>
+
+      <section id="monitoring" class="report-section">
+        <h3>Monitoring Progress DO Bahan Ajar SITTA</h3>
+        <p>Konten Monitoring Progress Deliver Order Akan Di Tampilkan Disini</p>
+      </section>
+      <section id="rekap" class="report-section">
+        <h3>Rekap Bahan Ajar SITTA</h3>
+        <p>Konten Rekapitulasi Bahan Ajar Akan Di Tampilkan Disini</p>
+      </section>
+      <section id="histori" class="report-section">
+        <h3>Histori Transaksi Bahan Ajar SITTA</h3>
+        <p>Konten Histori Transaksi Bahan Ajar Akan Di Tampilkan Disini</p>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

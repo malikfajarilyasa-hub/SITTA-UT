@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Bahan Ajar - SITTA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Informasi Bahan Ajar</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="dashboard.html">Beranda</a></li>
+          <li><a href="stock.html" class="active">Informasi Bahan Ajar</a></li>
+          <li><a href="tracking.html">Tracking Pengiriman</a></li>
+          <li><button id="logout-btn" class="logout-button">Keluar</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Tampilan Data Bahan Ajar</h2>
+
+      <button id="add-stock-btn" class="primary-button">
+        Tambah Stock Baru
+      </button>
+
+      <section id="add-stock-form-section" class="hidden-form">
+        <h3>Input Bahan Ajar Baru</h3>
+
+        <form id="new-stock-form" class="stock-form">
+          <input
+            type="text"
+            id="kodeLokasiNew"
+            placeholder="Kode Lokasi"
+            required
+          />
+          <input
+            type="text"
+            id="kodeBarangNew"
+            placeholder="Kode Barang (JSIM4101)"
+            required
+          />
+          <input
+            type="text"
+            id="namaBarangNew"
+            placeholder="Nama Barang"
+            required
+          />
+          <input
+            type="text"
+            id="jenisBarangNew"
+            placeholder="Jenis Barang (BMP)"
+            required
+          />
+          <input type="text" id="edisiNew" placeholder="Edisi" required />
+          <input
+            type="number"
+            id="stokNew"
+            placeholder="Stok"
+            min="1"
+            required
+          />
+          <label for="coverNew">Upload Cover Buku</label>
+          <input type="file" id="coverNew" accept="image/*" required />
+
+          <button type="submit" class="succes-button">Simpan Stock</button>
+          <button type="button" id="cancel-add-btn" class="secondary-button">
+            Batal
+          </button>
+        </form>
+      </section>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Cover</th>
+              <th>Kode Lokasi</th>
+              <th>Kode Barang</th>
+              <th>Nama Barang</th>
+              <th>Jenis</th>
+              <th>Edisi</th>
+              <th>Stok</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="stok-table-body"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
